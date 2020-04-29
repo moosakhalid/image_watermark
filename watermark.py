@@ -11,7 +11,7 @@ def watermark_text(input_image_path,output_image_path,text, pos):
     # make the image editable
     drawing = ImageDraw.Draw(photo)
 
-    font = ImageFont.truetype("Roboto-Black.ttf", 20)
+    font = ImageFont.truetype("image_watermark/Roboto-Black.ttf", 20)
 
     text_width, text_height = drawing.textsize(text, font)
     pos = width - text_width, (height - text_height) - 50
